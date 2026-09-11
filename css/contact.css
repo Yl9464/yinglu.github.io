@@ -1,0 +1,101 @@
+body {
+  background-color: #6D8B74;
+  font-family: "Montserrat";
+  color: #EFEAD8;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  position: fixed;
+  display: block;
+  color: #FAC213;
+  font-weight: bolder;
+  font-size: .94rem;
+  left: .3rem;
+  top: 1.88rem;
+}
+
+a:hover {
+  color: #EFEAD8;
+}
+
+.thanks {
+  display: block;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  margin: 70px;
+  top: 40px;
+    line-height: 1.5;
+}
+
+.contactInfo {
+  display: inline-block;
+  position: absolute;
+  color: #FAC213;
+  width: 87rem;
+  text-align: center;
+  left: 6.25rem;
+}
+
+.icons {
+  display: inline-block;
+  height: 2.5rem;
+  width: 2.5rem;
+  position: relative;
+}
+
+.phone {
+  position: relative;
+  right: 1.0625rem;
+}
+
+.myInfo {
+  display: inline-block;
+  position: relative;
+  color: #FAC213;
+  top: 1.87rem;
+  right: 5.625rem;
+  bottom: 10px;
+}
+
+/** message Form **/
+form {
+  display: block;
+  position: absolute;
+  margin: 8rem 10rem 0 31rem;
+}
+
+.nameLabel, .emailLabel {
+  display: inline;
+  bottom: 8.75rem;
+  left: 160rem;
+  color: #FAC213;
+}
+
+.nameInput, .emailInput {
+  display: inline;
+  bottom: 8.75rem;
+  left: 10rem;
+}
+
+.messageLabel {
+  display: block;
+  margin-top: 1.25rem;
+  text-align: center;
+  margin-right: 23.125rem;
+  color: #FAC213;
+}
+
+textarea {
+  position: relative;
+  left: 4.75rem;
+  bottom: 0.9375rem;
+  resize: vertical;
+}
+
+button {
+  position: relative;
+  left: .9375rem;
+  top: .5rem;
+}
