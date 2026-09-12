@@ -1,0 +1,121 @@
+
+A good structure would be:
+
+personal-site/
+├── index.html
+├── style.css
+└── images/
+Example style direction
+
+For a CS/cybersecurity portfolio, something like this works well:
+
+:root {
+    --background: #f8f9fa;
+    --surface: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --border: #e5e7eb;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.container {
+    width: min(90%, 1000px);
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+Why I recommend this
+
+For a personal site, simplicity is actually an advantage. You don't need hundreds of CSS classes or a complicated component system.
+
+I'd aim for:
+
+HTML
+→ semantic structure
+
+CSS
+→ layout + colors + typography + responsiveness
+
+JavaScript
+→ only when you actually need interaction
+
+For example:
+
+<header>
+    <nav>...</nav>
+</header>
+
+<main>
+    <section id="about">...</section>
+    <section id="projects">...</section>
+    <section id="skills">...</section>
+    <section id="contact">...</section>
+</main>
+
+<footer>...</footer>
+For your portfolio specifically
+
+Since you're building toward CS/cybersecurity roles, I'd lean toward a minimal professional developer portfolio rather than a heavily animated "designer" website.
+
+Something like:
+
+Ying Lu
+Computer Science Student | Cybersecurity & Digital Forensics
+
+About · Projects · Skills · Resume · Contact
+
+Then have project cards for things like your AI Movie Assistant, coursework/projects, and cybersecurity work.
+
+A dark theme with subtle blue/green accents would also fit cybersecurity well without looking overly "hacker themed."
+
+If you want, I can also give you a 
+complete index.html + style.css starter portfolio that you can open locally immediately.
+
+Meet Codex in the desktop app
+A coding agent that helps you build and ship with AI, included for free in your ChatGPT plan.
+Download the app
+Learn more

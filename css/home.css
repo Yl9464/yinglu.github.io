@@ -1,0 +1,75 @@
+/*reusable CSS variables */
+:root {
+    --background: #6d8b70;
+    --surface: #ffffff;
+    --font: "Montserrat";
+    --text: #1f2937;
+    --muted: #6b7280;
+    --accent: #d2dce0;
+    /* --border: 1px solid rgb(36, 28, 28); */
+}
+
+/*sizing for section elements*/
+* {
+    box-sizing: border-box;
+    border: var(--border);
+    margin: 0;
+    padding: 0;
+    /* border: 1px white solid; */
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 3px rgb(14, 152, 179) solid; */
+    padding: 5px;
+    background-color: rgb(61, 67, 36);
+}
+
+
+body {
+    font-family: var(--font);
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+    /* border: 4px blue solid; */
+}
+h1{
+    color:antiquewhite;
+    padding-left: 40%;
+}
+/* Responseive page*/
+.container {
+    width: min(90%, 1000px);
+    margin: 0 auto;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(61, 67, 36);
+    border-bottom: 4px rgb(169, 196, 189) solid;
+    
+
+}
+
+a {
+    color: var(--accent);
+    text-decoration: underline;
+    /* border: 4px rgb(85, 81, 74) solid; */
+}
+
+
+section {
+    padding: 5px;
+    /* border: 4px rgb(3, 240, 3) solid; */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #a1c2a3;
+    color: var(--text);
+}

@@ -1,0 +1,65 @@
+/*reusable CSS variables */
+:root {
+    --background: #6d8b70;
+    --surface: #ffffff;
+    --font: "Montserrat";
+    --text: #1f2937;
+    --muted: #6b7280;
+    --accent: #d2dce0;
+    --border: 1px solid rgb(36, 28, 28);
+}
+
+/*sizing for section elements*/
+* {
+    box-sizing: border-box;
+    border: var(--border);
+    margin: 0;
+    padding: 0;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Responseive page*/
+.container {
+    width: min(90%, 1000px);
+    margin: 0 auto;
+    border: 1px solid rgb(73, 151, 109);
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+a {
+    color: var(--accent);
+}
+
+/*
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+} */
