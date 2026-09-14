@@ -1,0 +1,107 @@
+/*reusable CSS variables */
+:root {
+    --background: #6d8b70;
+    --surface: #ffffff;
+    --font: "Montserrat";
+    --text: #1f2937;
+    --muted: #6b7280;
+    --accent: #d2dce0;
+    --padding:  padding: 15px 20px 15px 20px;/* Top | Right | Bottom | Left */
+    /* --border: 1px solid rgb(36, 28, 28); */
+}
+
+/*sizing for section elements*/
+* {
+    box-sizing: border-box;
+    /* border: var(--border); */
+    margin: 0;
+    padding: 0;
+    /* border: 1px white solid; */
+}
+
+.page-header {
+    display: flex;
+    /* border: 3px rgb(14, 152, 179) solid; */
+    background-color: rgb(61, 67, 36);
+}
+
+h1 {
+    color: var(--surface);
+    padding-left: 40%;
+}
+.navigation {
+    text-decoration: underline;
+    background-color: rgb(61, 67, 36); 
+
+}
+nav{
+    display: flex;
+    justify-content:space-evenly;
+    text-decoration: underline;
+
+}
+a {
+    color: var(--surface);
+}
+
+a:hover {
+    color: #3badda;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+    /* border: 4px blue solid; */
+}
+
+
+/* Responseive page*/
+.container {
+    width: min(90%, 1000px);
+    margin: 0 auto;
+}
+
+section {
+    padding: 20px;
+    border-bottom: 1px rgb(30, 32, 30) solid; 
+}
+
+/* Contact form */
+ul#contact-info{
+    display: flex;
+    justify-content: center; /* Centers horizontally (Main Axis) */
+    align-items: center;     
+    gap: 33px;
+}
+
+.contactForm {
+    width: 400px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+#messageArea {
+    resize: vertical;
+}
+
+#submitButton {
+    width:min-content;
+    margin-top: 10px;
+}
+
+/*resume*/
+iframe{
+    background-color: var(--background);
+}
