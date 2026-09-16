@@ -21,27 +21,39 @@
 }
 
 .page-header {
+    position: fixed;
     display: flex;
-    justify-content: center;
-    /* border: 3px rgb(14, 152, 179) solid; */
+    flex-direction: column;
+    /* stack h1 and nav under each verticle */
+    align-items: center;
+    /* Center everything horizontally */
+    width: 100%;
+    padding: 1rem;
     background-color: rgb(61, 67, 36);
+}
+
+.genmoji {
+    position:fixed;
+    top: 13px;
+    left: 13px;
+    width: 100px;
+    height: auto;
 }
 
 h1 {
     color: var(--surface);
-
+    margin: 0 auto;
 }
 
 .navigation {
-    text-decoration: underline;
     background-color: rgb(61, 67, 36);
-
 }
 
 nav {
+    
     display: flex;
-    justify-content: space-evenly;
-    text-decoration: underline;
+    justify-content: center;
+    gap: 40px;
 
 }
 
