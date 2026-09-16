@@ -21,7 +21,7 @@
 }
 
 .page-header {
-    position: relative;
+    position: fixed;
     display: flex;
     flex-direction: column;
     /* stack h1 and nav under each verticle */
@@ -33,7 +33,7 @@
 }
 
 .genmoji {
-    position: absolute;
+    position:fixed;
     top: 13px;
     left: 13px;
     width: 100px;
@@ -50,6 +50,7 @@ h1 {
 }
 
 nav {
+    
     display: flex;
     justify-content: center;
     gap: 40px;
