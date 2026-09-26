@@ -11,14 +11,13 @@
     /* --border: 1px solid rgb(36, 28, 28); */
 }
 
-/*sizing for section elements*/
-* {
-    box-sizing: border-box;
-    /* border: var(--border); */
-    margin: 0;
-    padding: 0;
-    /* border: 1px white solid; */
+.homepage {
+    --bs-gutter-y: 0;
+    width: 100%;
+    margin: 15px;
+
 }
+
 
 .page-header {
     display: flex;
@@ -32,12 +31,16 @@
 }
 
 .genmoji {
-    position: absolute;
-    top: 13px;
-    left: 13px;
     width: 100px;
     height: auto;
 }
+
+@media only screen and (max-width:720px) {
+    img {
+        display: none;
+    }
+}
+
 
 h1 {
     color: var(--surface);
@@ -49,7 +52,7 @@ h1 {
 }
 
 nav {
-    
+
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -74,32 +77,29 @@ body {
 
 
 /* Responseive page*/
-.container {
-    width: min(90%, 1000px);
-    margin: 0 auto;
-}
 
-section {
+
+/* section {
     padding: 20px;
     border-bottom: 1px rgb(30, 32, 30) solid;
-}
+} */
 
 /* Contact form */
-ul#contact-info {
+/* ul#contact-info {
     display: flex;
     justify-content: center;
-    /* Centers horizontally (Main Axis) */
+    /* Centers horizontally (Main Axis) 
     align-items: center;
     gap: 33px;
-}
+} 
 
-.contactForm {
+/* .contactForm {
     width: 400px;
     margin: 30px auto;
     display: flex;
     flex-direction: column;
     gap: 8px;
-}
+} */
 
 
 .contactForm input,
@@ -121,4 +121,57 @@ ul#contact-info {
 /*resume*/
 iframe {
     background-color: var(--background);
+}
+
+/* assingment 2 */
+@media only screen and (max-width:720px) {
+    img {
+        display: none;
+    }
+}
+
+.pjtCont {
+    padding-left: 30px;
+
+}
+
+.tempImg {
+    width: 100%;
+    height: 250px;
+    max-width: 300px;
+}
+
+.projectDets,
+.homepageSect {
+    padding: 10px;
+}
+
+.projTitleDate {
+    display: inline;
+    margin: 0 8px 0 0;
+}
+
+.github {
+    display: inline;
+    margin: 0 8px 0 0;
+}
+
+h1.project {
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+}
+
+.projectHeader {
+    display: flex;
+    /* align-items: flex-start; */
+    flex-wrap: wrap;
+    align-content: flex-start;
+    /* justify-content: space-evenly; */
+    flex-direction: column;
+}
+
+.tbdProject {
+    max-width: 100%;
+
 }
